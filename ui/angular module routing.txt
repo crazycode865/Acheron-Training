@@ -1,0 +1,1 @@
+ng g m  features/payments --route payment-details --module app.module

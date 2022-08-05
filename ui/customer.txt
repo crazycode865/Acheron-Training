@@ -1,0 +1,159 @@
+//Theatre
+{   
+    "theatreName":"Paradise",
+    "address":{
+        "city":"Mumbai",
+        "state":"Maharastra",
+        "zipcode":224133
+    },
+    "shows":
+    [
+       {
+            "showName":"Evening Show",
+            "price":1000,
+            "showStartTime":"2022-05-12T18:15:00",
+            "showEndTime":"2022-05-10T20:20:00",
+            "movie":{
+                 "movieName": "3-Idiot",
+        "language": "Hindi",
+        "genre": "Comedy",
+        "type": "Bollywood",
+        "format": "2-D",
+        "ratings": 7.5
+
+            }
+        },
+        {
+            "showName":"Morning Show",
+            "price":800,
+            "showStartTime":"2022-05-15T15:08:00",
+            "showEndTime":"2022-05-10T18:10:00",
+            "movie":{
+                 "movieName": "Wanted",
+        "language": "English",
+        "genre": "Action",
+        "type": "Hollywood",
+        "format": "3-D",
+        "ratings": 10
+
+            }
+        }
+    ]
+}
+
+
+
+
+
+
+{   
+    "theatreName":"PVR",
+    "address":{
+        "city":"Mumbai",
+        "state":"Maharastra",
+        "zipcode":224133
+    },
+    "shows":
+    [
+       {
+            "showName":"Evening Show",
+            "price":2000,
+            "showStartTime":"2022-05-12T18:15:00",
+            "showEndTime":"2022-05-10T20:20:00",
+            "movie":{
+                 "movieName": "Beast",
+        "language": "Tamil",
+        "genre": "Action",
+        "type": "Tollywood",
+        "format": "2-D",
+        "ratings": 7.5
+
+            }
+        },
+        {
+            "showName":"Morning Show",
+            "price":800,
+            "showStartTime":"2022-05-15T15:08:00",
+            "showEndTime":"2022-05-10T18:10:00",
+            "movie":{
+                 "movieName": "Wanted",
+        "language": "English",
+        "genre": "Action",
+        "type": "Hollywood",
+        "format": "3-D",
+        "ratings": 10
+
+            }
+        }
+    ]
+}
+
+//Customer
+{
+    "customerName":"Awadhesh",
+    "emailId":"awadhesh@gmail.com",
+    "address":
+    {
+        "city":"Lucknow",
+        "state":"Uttar Pradesh",
+        "zipcode":224188
+    }
+}
+{
+    "customerName":"Dibya",
+    "emailId":"dibya@gmail.com",
+    "address":
+    {
+        "city":"Rourkela",
+        "state":"Oddisha",
+        "zipcode":769002
+    }
+}
+
+
+{
+    "customerName":"Abuthair",
+    "emailId":"abuthair@gmail.com",
+    "address":
+    {
+        "city":"Chennai",
+        "state":"Tamil Nadu",
+        "zipcode":445566
+    }
+}
+{
+    "customerName":"Sandeep",
+    "emailId":"sandeep@gmail.com",
+    "address":
+    {
+        "city":"Hyderabad",
+        "state":"Telangana",
+        "zipcode":500081
+    }
+}
+
+
+//Booking
+
+{
+    "bookingDate": "2020-06-09",
+    "seatType": "AC-CLASS",
+    "totalSeats": 5
+}
+
+{
+    "bookingDate": "2019-04-10",
+    "seatType": "FIRST-CLASS",
+    "totalSeats": 7
+}
+
+{
+    "bookingDate": "2022-10-20",
+    "seatType": "SECOND-CLASS",
+    "totalSeats": 6
+}
+{
+    "bookingDate": "2022-11-20",
+    "seatType": "BALCONY",
+    "totalSeats": 4
+}

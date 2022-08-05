@@ -1,0 +1,10 @@
+1. maven jdbc - book/
+2. maven junit - 
+3. maven mockito - book
+4. spring autowiring - player
+5. spring jdbc 
+6. spring datajpa(console)
+7. spring mvc - 
+8. spring rest with datajpa
+9. spring rest with datajpa and exception handling/ response entity
+10. spring rest jwt

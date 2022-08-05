@@ -1,0 +1,32 @@
+1. Project Requirement Clarification
+2. Project Architecture Diagram
+3. Technology used
+4. Base Projet Création
+5. Create proper config files
+6. Identify all tables/entities
+7. Relationship between tables
+8. Create entity classes
+9. Create Empty repository classes
+10. Create Dozer Bean Mapper
+11. Enable log4j
+12. Create flyway integration
+13. Unit Testing Base class
+14. Docker file for Project with MySQL integration (Need help from Infrastructure team)
+15. Keycloak setup/integration for authenti
+15. Keycloak setup/integration for authentication and authorisation
+16. Dashboard -> Landing page based on login success and user role.
+17. Flyway integration for SQL script management
+
+
+6,7 => all should know. One team  should own it and create ERD 
+8,9 => 2 team should work together
+15 => One team
+Badal Baidya9:44 AM
+6,7 =>Dibya
+8,9 => Dibya
+8,9 => Baba 
+Badal Baidya9:46 AM
+6,7 => Baba
+Badal Baidya9:48 AM
+4,5 => Sandeep
+Keycloak => Awadesh

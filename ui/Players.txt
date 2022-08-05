@@ -1,0 +1,44 @@
+   Abuthair
+******Player Application******** 
+
+
+Player
+private Integer playerId
+private String playerName;
+private String country
+private String batting ******* Enum(All rounder,RIGHT HANDER,LEFT HANDER)
+private String bowling *******Enum(MEDIUM PACER,)
+private String specialist
+private String specialist;
+@OneToOne
+private String team; 
+@OneToMany
+private Set<Format>formats
+@ManyToMany
+@JoinTable(name=player_league_id,
+@JoinColumn(player_id AND league_id))
+
+private Set<League>leagues
+
+*******TEAM*******
+private Integer teamId;
+private String teamName *******Enum(IPL-TEAM,STATE-TEAM,NATIONAL-TEAM)
+private String city;
+@OneToMany
+private String championship;
+
+******League*****
+private integer leagueId;
+private String lagueName; ****Enum(             )
+private String country;
+private String Venue;
+
+*******Formats*******
+private Integer formatId
+private String formatName; ******Enum (----------)
+private LocalDate timimg;
+private integer over
+
+
+
+

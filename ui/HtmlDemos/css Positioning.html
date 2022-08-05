@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <title>Css positioning</title>
+        <style>
+            /* .box{
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background: red;
+                color: greenyellow;
+
+            }
+            #two{
+                background-color: green;
+                position:absolute;
+                top: 100px;
+                left: 100px;
+
+            } */
+             .box{
+                 position:fixed;
+                 left: 20px;
+                 top: 20px;
+            width: 50px;
+            height: 50px;
+            background-color:red
+        }
+        .outer{
+            overflow: scroll;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            padding-left: 100px;
+        }
+        </style>
+       
+    </head>
+    <body>
+<!-- <div class="box" id="one">One</div>
+<div class="box" id="two">Two</div>
+<div class="box" id="three">Three</div> -->
+
+<div class="outer">
+    <p>The absolute positioning that sashi sugests should work, however
+         it has some drawbacks, when you use absolute positioning the item 
+         postioned comes out of normal document flow. Normal document flow
+          is how the browser positions everything automatically, when the 
+          image is no longer in normal document flow the browser will just
+           ignore it as far as deciding where to position everything else.
+        </p>
+        <div class="box" id="four"></div>
+</div>
+    </body>
+</Html>

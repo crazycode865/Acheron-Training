@@ -1,0 +1,36 @@
+docker pull awadhesh7/acheronrepo:book-rest
+docker pull awadhesh7/acheronrepo:greet-rest
+
+
+
+
+1. create a network for 2 docker containers to communicate with each other
+   docker network create product-mysql
+2. create a mysql container
+docker container run
+ --name mysqlhost
+ --network microsql
+ -e MYSQL_ROOT_PASSWORD=root
+ -e MYSQL_database=dbtraining
+ -d  mysql:8
+
+3. Get the logd for the container mysql
+docker container logs -f ae
+
+4. Use the below command to get the bash terminal for mysql
+docker container exec -it 3847d55a7620 bash
+
+
+
+docker network create product-mysql
+docker run --network product-mysql --name mysqlhost -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=trainingdb -p 3306 -d mysql:8
+
+docker container logs -f <containerid>
+
+docker container exec -it <containerId> bash
+
+You will get a new terminal. give the comm and
+ mysql-uroot -proot
+
+docker container run --name mysqldb --network product-mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=dbtraining -d mysql:8
+

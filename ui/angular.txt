@@ -1,0 +1,5 @@
+create Observable using
+1.of() ,interval(), or new keyword
+
+observer object
+1 next(data), error(),complete()

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+           
+        <style>
+           form{
+               border: 3px solid;
+               width: 450px;
+           }
+        </style>
+    </head>
+    <body>
+        <form action>
+            <table>
+                <h2>Registration Form</h1>
+                <tr>      
+       <th>Name:</th>
+       <td><input type="text" name="name" placeholder="Enter your name" required pattern=".{5,15}"/></td>
+                </tr>
+
+        <tr>
+            <th> Password:</th>
+            <td><input type="password" name="pass" placeholder="Enter password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&*_]).{5,15}"/></td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+        <td><input type="number" name="age" placeholder="Age" min=18 max=30 required /></td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td><input type="radio" name="gender" value="male" checked/>Male
+                <input type="radio" name="gender" value="female"/>Female
+            </td>
+        </tr>
+        <tr>
+            <th>Course name:</th>
+            <td>
+                <select name="course" >
+                    <option value="select" selected>----select----</option>
+                    <option  value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="social science">Social Science</option>
+                    <option value="english">English</option>
+            </td>
+        </tr>
+      <tr>
+          <th>Hobbies:</th>
+          <td>
+              <input type="checkbox" name="c1" value="sports"  checked/>Sports
+              <input type="checkbox" name="c1" value="singing" />Singing
+            <input type="checkbox" name="c1" value="reading" />Reading
+            <input type="checkbox" name="c1" value="writing" />Writing
+            <input type="checkbox" name="c1" value="dance" />Dancing
+            <input type="checkbox" name="c1" value="dance" />Travelling
+            <input type="checkbox" name="c1" value="dance" />Painting
+          </td>
+      </tr>
+        
+        <tr>
+            <th>Phone:</th>
+            <td>
+            <input type="tel" name="phone" placeholder="Enter phone number" required pattern=".{10,12}"/>
+            </td>
+        </tr>
+        <tr>
+            <th>DOB:</th>
+            <td>
+                <input type="date" name="dob" min="1998-01-01" />
+            </td>
+        </tr>
+        <tr>
+            
+            <td colspan="2">
+                <input style="cursor: pointer;"  type="submit" value="Submit"/>
+                <input  style="cursor: pointer;" type="reset" value="Reset"/>
+            </td>
+        </tr>
+         
+        </table>
+        </form>
+        <p>hhfoisjioskcpasokopskfpojvops</p>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+lifecycle A - B - C
+
+constructor - all
+OnInit - for app
+docheck -app 
+content init -app
+content checked -app
+on changes -A
+oninit - A
+docheck A
+content init -A
+content checked -A
+onchanges B
+oninit b
+docheck b
+content init b
+content checked B
+view init b
+view cheked b
+view init a
+view checked a
+view init app
+vie checked app
+
+
+
+parent--->child --->on changes
+child---->parent--->view Init ---static data
+child---->parent--->view check ---dynamic data
+
+ng g m modules/admin --routing
+ng g m modules/shared/material

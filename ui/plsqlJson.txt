@@ -1,0 +1,10 @@
+{
+"employeeId:1,
+"name":"Awadhesh",
+"age":24,
+"city":"Lucknow",
+"state":"Uttar Pradesh",
+"designation":"Associate softawre Engineer",
+"Gender":"Male",
+"Company":"Acheron"
+}

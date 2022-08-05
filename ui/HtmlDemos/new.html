@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A simple web page</title>
+    <!-- <style type="text/css">
+        body{
+            background-color: pink;
+        }p{
+            color: green;
+            font-family: italic;
+        }h1{
+            color: rgb(99, 49, 216);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style> -->
+    <style type="text/css">
+        body{
+            background-color: aqua;
+            background-image: url("images/acheron.jfif");
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/extstyle.css"> 
+</head>
+<body>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/Q2HxNUOaYbM"
+     title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
+    </iframe>
+    <header>
+        <h1>ABC training Academy</h1>
+        <h3>Training simplified</h3>
+    </header>
+    <nav>
+        <h1>Navigation</h1>
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="History">History</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Contact us">Contact us</a></li>
+
+        </ul>
+    </nav>
+    <form action="new.html" method="get">
+        <input type="number" name="age"><br>
+        <input type="email" name="email"><br>
+        <input type="date" name="date"><br>
+        <input type="date-local" name="datelocal"><br>
+        <input type="password" name="pass"><br>
+        <input type="tel" name="phone"><br>
+        <input type="range" name="num1" value="90"><br>
+        <input type="month" name="month"><br>
+        <input type="color" name="color"><br>
+        <input type="submit" value="Add">
+
+    </form>
+    <h2>Datalist</h2>
+   Choose city: <input list="city" name="mcity"/>
+    <datalist id="city">
+        <option value="coorg"></option>
+        <option value="banglore"></option>
+        <option value="hyderabad"></option>
+        <option value="lucknow"></option>
+    </datalist>
+    <form>
+        <input type="number" name="num1" value="20"/><br>
+        <input type="number" name="num2" value="100" /><br>
+        <input type="button" value="Add" onclick="out.value=parseInt(num1.value)+parseInt(num2.value)" />
+        <output name="out" style="background-color:aquamarine"></output>
+        <input type="button" value="Greet" onclick="msg.value='Hello World!...'"/>
+        <output name="msg"></output>
+
+    </form>
+    <br>
+    Hello <br/>
+<i>Welcome to HTML</i>
+    <h1>Welcome to HTML tag</h1>
+    <h2>Welcome to HTML tag</h2>
+    <h3>Welcome to HTML tag</h3>
+    <h4>Welcome to HTML tag</h4>
+    <strong>Learning HTML is easy</strong>
+    <a name="top"></a>
+    <a href="#end">Go down</a>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est 
+        ratione, itaque quam facilis esse dolorem enim magni vitae perspiciatis voluptatum, temporibus sint ab corporis 
+        totam ad minima deleniti facere accusamus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione, itaque quam facilis esse dolorem enim 
+        magni vitae perspiciatis voluptatum, temporibus sint ab corporis totam ad minima deleniti facere accusamus!
+         </p>
+    <pre>
+        Acheron 12.0,
+        Hyderrabad , ......
+                 Learning Web tech
+    </pre>
+    <ol type="A">
+        <li style="list-style-type: float right;">Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ol>
+    <ul type="bullet">
+        <li>Nokia</li>
+        <li>Samsung</li>
+        <li>Apple</li>
+        <li>Carbon</li>
+    </ul>
+    <dl>
+        <dt>Chapter 1</dt>
+        <dd>Overview</dd>
+        <dd>Abtract</dd>
+        <dd>Body content</dd>
+        <dd>Conclusion</dd>
+        <dt>Chapter 2</dt>
+        <dd>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est 
+                ratione, itaque quam facilis esse dolorem enim magni vitae perspiciatis voluptatum, temporibus sint ab corporis 
+                totam ad minima deleniti facere accusamus!
+                
+            </p>
+        </dd>
+        <dd>Benifits</dd>
+    </dl>
+    <fieldset>
+        <legend align="center" >Student Details</legend>
+    <table border="1" cellspacing="1" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Abu</td>
+            <td>Math</td>
+            <td rowspan="2">100</td>
+        </tr>
+        <tr>
+            <td>Awadhesh</td>
+            <td>Science</td>
+            
+        </tr>
+        <tr>
+            <td>Ashfaq</td>
+            <td>Computer</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total:170</td>
+        </tr>
+    </table>
+</fieldset>
+
+    <img  src="images/acheron.jfif" alt="Abu" height="300px" width="300px" />
+    <a href="https://www.w3schools.com/html/default.asp">Visit google</a>
+    <a href="#top">Go Up</a>
+    <a name="end"></a>
+    <form method="get" name="form1">
+        Name:<input type="text" name="n1" />
+        Password<input type="password" name="p1"/>
+        <input type="submit" value="CLICK HERE"/>
+        <input type="reset" value="CLEAR"/>
+    </form>
+    Name:<input type="text" name="name"  id="username" placeholder="Enter user name"/>
+    Password:<input type="password" name="pass" id="password" placeholder="Enter password" /><br>
+    Gender:<input type="radio" name="r1" value="male" />Male
+           <input type="radio" name="r1" value="Female" /> Female<br>
+    Hobbies:<input type="checkbox" name="c1" value="sports" />Sports
+            <input type="checkbox" name="c1" value="singing" />Singing
+            <input type="checkbox" name="c1" value="reading" />Reading
+            <input type="checkbox" name="c1" value="writing" />writing
+            <input type="checkbox" name="c1" value="dance" />Dance
+            <br>
+    Select Language:<select name="lan">
+                    <option value="select" selected>----select----</option>
+                    <option  value="java">JAVA</option>
+                    <option value="jsp">JSP</option>
+                    <option value="Python">Python</option>
+                    <option value="jdbc">JDBC</option>
+                    <option value="spring">Spring</option>
+                    <option value="hibernate">Hibernate</option>
+    </select>
+    <textarea rows="10" cols="10"></textarea>  
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset"  style="background-color:rgb(81, 189, 81)" />
+    <button style="background-color:rgb(233, 41, 41)">Add</button>
+
+
+
+    
+</body>
+</html>

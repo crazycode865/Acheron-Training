@@ -1,0 +1,22 @@
+bookingId bookingDate ticketcost totalseats customerId movieid  type
+1          08/09       200          10         1          100   FIRSTCLASS
+
+
+
+Booking - Movie -  ManyToOne
+Movie - Booking  - one to many
+
+
+Booking - Customer--  manytoone
+Customer - Booking - one to many
+
+Movie- show--   oneTomany
+Show-Theatre-  manyTomany
+
+Theatre-show----manyTomany
+
+Theatre-Address--oneToone
+Customer-to--address---oneToone
+
+
+

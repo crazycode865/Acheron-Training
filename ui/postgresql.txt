@@ -1,0 +1,6 @@
+select sum(cast(item->>'price' as integer)*cast(item->>'quantity' as integer)) as cost from product;
+
+select item->>'itemname' as item_name, item->'info'->>'brand' as price from product where CAST(item->>'price' AS Integer)<10000;
+
+
+select sum(cast(item->>'price' as integer)*cast(item->>'quantity' as integer)) as cost from product group by item->'info'->>'category';

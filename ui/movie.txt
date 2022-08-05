@@ -1,0 +1,47 @@
+Awadhesh -------Movie Application---------
+
+
+Movie
+Private Integer movieId;
+private String movieName;
+private String language;
+@OneTomany
+private Set<Genre> genres;
+@OneToMany
+private Set<Format>formats;
+@OneToOne
+private String type ; ------ENUM (HOLLYWOOD,BOLLYWOOD,TOLLYWOOD,JOLLYWOOD)
+private double ratings;
+private LocalDate yearOfRelease
+  @ManyToMany
+    @JoinTable(name = "movie_theater",
+            joinColumns = {@JoinColumn(name = "movie_id")},
+            inverseJoinColumns = {@JoinColumn(name = "theaters_id")}
+    )
+private Set<Theater>theaters;
+private double price;
+
+
+------Genre------
+private Integer genreId;
+private String genrename; ----- Enum(ACTION,DRAMA,THRILLER,COMEDY,FANTACY,ROMANCE,CRIME,FAMILY,SCI-FI,ADVENTURE,HORROR,SPORTS)
+
+------Theater------
+private Integer theaterId;
+private String theaterName;
+@OneToOne
+private Address address;
+
+--------Format------
+private Integer formatId
+private String formatName; ------  Enum (2-D,3-D,IMAX,IMAX-SCREENX)
+
+
+-------Address---------
+private Integer addressId;
+private String city;
+private String state;
+private Integer zipcode;
+
+
+

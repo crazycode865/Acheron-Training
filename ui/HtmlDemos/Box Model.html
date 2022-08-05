@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            p{
+            
+                background-color: aquamarine;
+                width: 250px;
+                height: 250px;
+                padding-left: 25px;
+                border: 10px solid black;
+                margin: 15px;
+
+            }
+            div{
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: ease;
+                transition-delay: 1s;
+
+            }
+            div:hover{
+                width: 300px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>The absolute positioning that sashi sugests should work, however
+            it has some drawbacks, when you use absolute positioning the item 
+            postioned comes out of normal document flow. Normal document flow
+             is how the browser positions everything automatically, when the 
+             image is no longer in normal document flow the browser will just
+              ignore it as far as deciding where to position everything else.
+            </p>
+            <div>Hello World !......</div>
+    </body>
+</html>

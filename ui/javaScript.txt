@@ -1,0 +1,88 @@
+//nested function
+var average = function(m1,m2,m3){
+    var message = "The sum is";
+    // inner function
+    function sum(){
+        //access the outer function variables
+        console.log(message);
+        return m1+m2+m3;
+    }
+    var total = sum()/3;
+    console.log(total);
+}
+average(90,80,90);
+
+var average1 = function(m1,m2,m3){
+    var message = "The average is";
+    // IIFE
+    var total = (function(){
+        //access the outer function variables
+        console.log(message);
+        return m1+m2+m3;
+    })()/3;
+    console.log(total);
+}
+average1(90,90,90);
+
+// function returning a value
+var average2 = function(m1,m2,m3){
+
+    var sum = function (){
+        return m1+m2+m3;
+    }
+    var total = sum()/3;
+    return total;
+}
+var avg2 = average2(90,90,90);
+console.log(avg2);
+  
+// function returning a value
+var average2 = function(m1,m2,m3){
+
+    var total = function (){
+        return m1+m2+m3;
+    }()/3;
+    return total;
+}
+var avg2 = average2(90,90,90);
+console.log(avg2);
+
+
+
+8. Module DP
+item has name and price
+addToCart({name:'Bun',price:10})
+
+CartModule
+ var cart =[]
+ let _addToCart = function(item){
+  cart.push(item);
+ }
+ _getCount -> return the size of the cart
+ _calcTotal -> iterate through the cart and print the price
+_showItems -> iterate through the cart and show the items in the cart
+
+_printBill->print message as 'your bill',call totalItems as getCount() _showItems,_calcTotal inside this method
+
+return
+ message:'Your Cart Details',
+ addToCart:_addToCart,
+ billDetails:_printBill
+
+
+
+create a function constructor for employee with name and city
+create two employee objects and print it
+create a function constructor for manager with name,city, slary
+create a manager object and print it
+
+
+// Vehicle -name,brand, price  print()
+// Bike - name,brand, price,mileage  showMileage(engineCC:string) 
+// Car - name, brand, price, fuelType -> showAccessories(...accessories:string[])
+
+interface Calculator - > sum(x,y), product(x,y)
+class BasicCalc-->implements Calc
+
+interfacs Scientific extends Calc -> square(x), Cube(x)
+class SciCalc extedns Basic impl Scientific

@@ -1,0 +1,17 @@
+var WEEKDAYS;
+(function (WEEKDAYS) {
+    WEEKDAYS[WEEKDAYS["MONDAY"] = 0] = "MONDAY";
+    WEEKDAYS[WEEKDAYS["TUESDAY"] = 1] = "TUESDAY";
+    WEEKDAYS[WEEKDAYS["WEDNESDAY"] = 2] = "WEDNESDAY";
+    WEEKDAYS[WEEKDAYS["THURSDAY"] = 3] = "THURSDAY";
+    WEEKDAYS[WEEKDAYS["FRIDAY"] = 4] = "FRIDAY";
+    WEEKDAYS[WEEKDAYS["SATURDAY"] = 5] = "SATURDAY";
+    WEEKDAYS[WEEKDAYS["SUNDAY"] = 6] = "SUNDAY";
+})(WEEKDAYS || (WEEKDAYS = {}));
+console.log(WEEKDAYS.SUNDAY);
+var showType = function (choice) {
+    console.log(choice);
+};
+showType(WEEKDAYS.FRIDAY);
+showType(WEEKDAYS.SUNDAY);
+showType(WEEKDAYS.SATURDAY);

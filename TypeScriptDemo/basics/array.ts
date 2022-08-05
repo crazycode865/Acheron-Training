@@ -1,0 +1,10 @@
+var num: number[] = [10, 20, 30, 40];
+var [a, b, c, d] = num;
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+var [n] = num;
+console.log(n);
+var [a, , , d] = num;
+console.log(d);

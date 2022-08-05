@@ -1,0 +1,11 @@
+var username: string;
+username = "Awadhesh";
+console.log(`${username}`);
+var message = "Have a Great day";
+console.log(`${message}`);
+var value: string | number;
+value = "Sri";
+if (typeof value == "string") console.log(`Hello ${value}`);
+else console.log(`The squre of number is ${value * value}`);
+value = 10;
+console.log(`The squre of number is ${value * value}`);

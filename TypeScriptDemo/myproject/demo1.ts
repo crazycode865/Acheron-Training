@@ -1,0 +1,10 @@
+var mixed = ["hello", 10, 20, 14.5];
+var mix_tuple = [];
+mix_tuple[0] = 120;
+mix_tuple[1] = "Awadhesh";
+console.log(mix_tuple[0]);
+mix_tuple[3] = "Hi";
+console.log(mix_tuple.length);
+var mixnums = [10, "Hello Awadhesh", 33, 55];
+var [x, y] = mixnums;
+console.log(x, y);
